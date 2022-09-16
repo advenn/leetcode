@@ -1,4 +1,8 @@
 # The isBadVersion API is already defined for you.
+"""
+leetcode link: https://leetcode.com/problems/first-bad-version/
+level: easy
+"""
 import random
 
 a = random.randint(1, 1000)

@@ -1,3 +1,7 @@
+"""
+leetcode link: https://leetcode.com/problems/search-insert-position/
+level: easy
+"""
 from typing import List
 
 
