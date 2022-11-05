@@ -5,7 +5,7 @@ class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         from math import log10
         length = len(digits) - 1
-        print(length)
+        # print(length)
         lst1 = []
         for i in range(length, 0 - 1, -1):
             lst1.append(digits[abs(i - length)] * (10 ** abs(i)))

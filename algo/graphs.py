@@ -25,13 +25,8 @@ def search(name):
     search_queue = deque()
     search_queue += graph[name]
     searched = []
-    # print(searched)
-    print(search_queue)
     while search_queue:
         person = search_queue.popleft()
-        print(person)
-        # print(searched)
-        print(search_queue)
         if person not in searched:
             if person_is_seller(person):
                 print(person + " is a mango seller!")

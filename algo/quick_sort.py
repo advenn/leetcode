@@ -34,7 +34,7 @@ def selection_sort(arr):
     return new_arr
 
 
-nums = [random.randint(1, 1000000) for i in range(1000000)]
+nums = [random.randint(1, 1000000) for i in range(10000)]
 # name_lst = [names.get_first_name() for _ in range(1000)]
 
 start = time.time()
