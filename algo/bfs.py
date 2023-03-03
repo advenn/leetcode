@@ -3,7 +3,7 @@
 # @param graph: dictionary of graph
 # @param start: start node
 # @param end: end node
-# @return: list of shortest path
+# @return: list of the shortest path
 def bfs(graph, start, end):
     queue = [(start, [start])]
     while queue:
