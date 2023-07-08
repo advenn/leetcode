@@ -3,8 +3,15 @@ from typing import List
 
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
+        if len(nums) < 3:
+            return 0
 
         pass
+
+
+
+
+
 
 
 s = Solution()
