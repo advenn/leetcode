@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     def climbStairs(self, n: int) -> int:
-        '''
+        """
         n = 2 -> 2:
             1. 1 step + 1 step
             2. 2 steps
@@ -35,12 +35,13 @@ class Solution:
             6. 1,1,1,1,2
             7. 2,2,1,1
             8.
-        '''
+        """
 
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         from collections import Counter
+
         c = Counter(nums)
         c = {v: k for k, v in c.items()}
         return c[1]

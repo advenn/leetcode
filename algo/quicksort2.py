@@ -1,5 +1,6 @@
 import random
 import bubble_sort
+
 nums = [random.randint(0, 1000) for i in range(100 // 2)]
 print(len(nums), nums)
 

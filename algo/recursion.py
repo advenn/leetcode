@@ -68,7 +68,7 @@ url = "https://www.usnews.com/best-graduate-schools/api/search?format=json&progr
 data = []
 for p in range(1, 11):
     r = requests.get(url.format(p=p), headers=headers)
-    for i in r.json()['data']['items']:
+    for i in r.json()["data"]["items"]:
         data.append(i)
 
 print(len(data))

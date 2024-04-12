@@ -80,16 +80,18 @@
 # # This code is contributed by Divyanshu Mehta
 
 graph = {
-    'a': {'b': 1, 'c': 1.5, 'e': 2},
-    'b': {'d': 1.5},
-    'c': {'l': 2, 'e': 1.5}, 'd': {'f': 1},
-    'e': {'g': 2, "h": 2, "k": 1, "l": 2},
-    'f': {'g': 1},
-    'g': {'h': 1},
-    'h': {'i': 1.5},
-    'i': {'j': 2},
-    'j': {},
-    'k': {'i': 2, "h": 2}, 'l': {'k': 3}
+    "a": {"b": 1, "c": 1.5, "e": 2},
+    "b": {"d": 1.5},
+    "c": {"l": 2, "e": 1.5},
+    "d": {"f": 1},
+    "e": {"g": 2, "h": 2, "k": 1, "l": 2},
+    "f": {"g": 1},
+    "g": {"h": 1},
+    "h": {"i": 1.5},
+    "i": {"j": 2},
+    "j": {},
+    "k": {"i": 2, "h": 2},
+    "l": {"k": 3},
 }
 
 
@@ -124,11 +126,12 @@ def dijkstra(graph, start, end):
             track_path.insert(0, currentNode)
             currentNode = track_predecessor[currentNode]
         except KeyError:
-            print('Path not reachable')
+            print("Path not reachable")
             break
     track_path.insert(0, start)
     if shortest_distance[end] != infinity:
-        print('Shortest distance is ' + str(shortest_distance[end]))
-        print('And the path is ' + str(track_path))
+        print("Shortest distance is " + str(shortest_distance[end]))
+        print("And the path is " + str(track_path))
 
-dijkstra(graph, 'a', 'j')
+
+dijkstra(graph, "a", "j")

@@ -4,4 +4,4 @@ class Solution:
 
 
 s = Solution()
-print(s.addBinary('11', '1'))
+print(s.addBinary("11", "1"))

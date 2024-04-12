@@ -51,6 +51,7 @@ from typing import List
 
 # This code is contributed by _Devesh Agrawal_
 
+
 class Solution_easy_one:
     def lengthOfLastWord(self, s: str) -> int:
         s = s.rstrip()
@@ -74,7 +75,7 @@ class Solution:
             * l for left
             * u for up
         """
-        directions = ('r', 'd', 'l', 'u')
+        directions = ("r", "d", "l", "u")
         steps = []
         for i in range(1, 1 + n):
             if i != n:
@@ -89,26 +90,27 @@ class Solution:
         cnt = 0
         dir_count = 0
         for count, step in enumerate(steps):
-            print('step: ', step, count)
+            print("step: ", step, count)
             direction = directions[(count) % 4]
-            print('direction: ', direction)
+            print("direction: ", direction)
             for _ in range(step):
                 print("_: ", _, coordinate)
                 assignee = num_range[cnt]
                 result[coordinate[0]][coordinate[1]] = assignee
                 print(coordinate, count, step, direction)
-                if direction == 'r':
-                    if coordinate[1] <= n-1:
+                if direction == "r":
+                    if coordinate[1] <= n - 1:
                         coordinate[1] += 1
-                elif direction == 'd':
+                elif direction == "d":
                     coordinate[0] += 1
-                elif direction == 'l':
+                elif direction == "l":
                     coordinate[1] -= 1
                 else:
                     coordinate[0] -= 1
                 cnt += 1
 
         return result
+
 
 # class Solution:
 #     def generateMatrix(self, n: int) -> List[List[int]]:
@@ -210,5 +212,5 @@ s = Solution()
 # print(s.generateMatrix(n=1))
 # print(s.generateMatrix(n=2))
 # print(s.generateMatrix(n=3), sep='\n')
-print(*s.generateMatrix(n=4), sep='\n')
+print(*s.generateMatrix(n=4), sep="\n")
 # print(s.generateMatrix(n=5))

@@ -9,7 +9,7 @@ graph = {
     "anuj": [],
     "peggy": ["jam"],
     "thom": [],
-    "jonny": []
+    "jonny": [],
 }
 
 
@@ -18,7 +18,7 @@ graph = {
 
 
 def person_is_seller(name):
-    return name[-1] == 'm'
+    return name[-1] == "m"
 
 
 def search(name):

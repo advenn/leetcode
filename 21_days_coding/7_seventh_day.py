@@ -21,9 +21,9 @@ class Solution:
 
     def convertToTitle(self, columnNumber: int) -> str:
         from string import ascii_uppercase
+
         num2letter = {index + 1: letter for index, letter in enumerate(ascii_uppercase)}
         print(num2letter)
-
 
 
 s = Solution()
